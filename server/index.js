@@ -24,7 +24,7 @@ massive(process.env.CONNECTION_STRING).then(database => {
 app.post('/api/logout', authController.logout); 
 
 //Networking
-app.get('api/couches', couchesController.getCouches); 
+app.get('/api/couches', couchesController.getCouches); 
 app.post('/api/couches', couchesController.postCouch); 
 app.get('/auth/callback', authController.handleCallback); 
 
