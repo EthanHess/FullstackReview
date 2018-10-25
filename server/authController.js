@@ -20,7 +20,7 @@ module.exports = {
             const payload = {
                 client_id: process.env.REACT_APP_AUTH0_CLIENT_ID, 
                 client_secret: process.env.AUTH0_CLIENT_ID, 
-                code: requ.query.code, 
+                code: req.query.code, 
                 grant_type: 'authorization_code', 
                 redirect_uri: `http://${req.headers.host}/auth/callback`
             }

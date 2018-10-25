@@ -26,7 +26,7 @@ app.post('/api/logout', authController.logout);
 //Networking
 app.get('api/couches', couchesController.getCouches); 
 app.post('/api/couches', couchesController.postCouch); 
-app.get('/api/auth/callback', authController.handleCallback); 
+app.get('/auth/callback', authController.handleCallback); 
 
 app.get('/api/me', userController.getUserData); 
 

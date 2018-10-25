@@ -1,1 +1,1 @@
-select * from users where auth0_id = ${auth0Id} limit 1; 
+select * from fs_users where auth0_id = ${auth0Id} limit 1; 
