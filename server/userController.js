@@ -1,5 +1,5 @@
 module.exports = {
-    getUserData: (res, req) => {
+    getUserData: (req, res) => {
         res.status(200).json(req.session.user); 
     }
 }
